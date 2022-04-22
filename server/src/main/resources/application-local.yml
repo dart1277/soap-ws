@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: ws-server
+---
+server:
+  port: 8012
+  ssl:
+    enabled: true
+    client-auth: need
+    key-store: classpath:server-keystore.jks
+    key-store-password: changeit
+    key-alias: server
+    key-store-type: JKS
+    key-store-provider: SUN
+    trust-store: classpath:server-truststore.jks
+    trust-store-password: changeit
+    trust-store-type: JKS

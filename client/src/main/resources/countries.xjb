@@ -1,0 +1,17 @@
+<jxb:bindings
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+        version="2.1">
+
+    <!-- Raise theEnumMemberSizeCap limit -->
+    <jaxws:bindings xmlns:jaxws="http://java.sun.com/xml/ns/jaxws">
+        <jaxws:enableWrapperStyle>false</jaxws:enableWrapperStyle>
+        <jaxws:enableAsyncMapping>false</jaxws:enableAsyncMapping>
+    </jaxws:bindings>
+    <jxb:bindings>
+        <jxb:globalBindings typesafeEnumMaxMembers="2000" generateElementProperty="false"
+                            typesafeEnumMemberName="generateName"/>
+    </jxb:bindings>
+
+
+</jxb:bindings>

@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="two-way-ssl-spring-boot-master:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/two_way_ssl_spring_boot_master_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="two-way-ssl-spring-boot-master/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="two-way-ssl-spring-boot-master" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

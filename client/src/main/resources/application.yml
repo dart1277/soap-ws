@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: ws-client
+
+server:
+  port: 8081
+
+logging:
+  level:
+    com:
+      cx:
+        client: DEBUG
+
+# keytool -genkeypair -alias client-alias -keyalg RSA -keysize 2048 -storetype JKS -keystore client-keystore.jks -validity 3650 -ext SAN=dns:localhost,ip:127.0.0.1
+# keytool -genkeypair -alias server -keyalg RSA -keysize 2048 -storetype JKS -keystore server-keystore.jks -validity 3650 -ext SAN=dns:localhost,ip:127.0.0.1
+# keytool -export -alias client-alias -file client-pub.crt -keystore client-keystore.jks
+# keytool -export -alias server -file server-pub.crt -keystore server-keystore.jks
+
+# keytool -import -alias server-pub -file server-pub.crt -keystore client-truststore.jks
+# keytool -import -alias client-pub -file client-pub.crt -keystore server-truststore.jks
+
+# keytool -importkeystore -srckeystore client-keystore.jks -destkeystore client-keystore.p12 -srcstoretype JKS -deststoretype PKCS12 -deststorepass password
+
+
